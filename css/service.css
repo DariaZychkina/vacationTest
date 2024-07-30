@@ -1,0 +1,86 @@
+#myModalService {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: rgba(64, 70, 78, 0.50);
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#modalContentService {
+    background-color: #fefefe;
+    width: 1200px;
+    height: 600px;
+    margin: 30px auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+#serviseBtns {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 29px;
+}
+
+.btnService {
+    width: 191px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    border: 0;
+    background: #F0F0F0;
+    color: #000;
+    font-size: 16px;
+    cursor: default;
+}
+
+.btnService:hover {
+    background: #929292;
+    color: #fff;
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    width: 1050px;
+    height: 277px;
+}
+
+.listelem {
+    height: 62px;
+    border-bottom: 1px solid #D2D2D2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: default;
+}
+
+#successServ {
+    width: 744px;
+    height: 65px;
+    border-radius: 34px;
+    background: #929292;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    cursor: default;
+}

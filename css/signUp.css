@@ -1,0 +1,69 @@
+.signContent {
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 44px;
+    color: #000;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    display: none;
+}
+
+.hello {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.disc {
+    text-align: center;
+    font-size: 18px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.input {
+    width: 632px;
+    height: 108px;
+    flex-shrink: 0;
+    background: #F0F0F0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 0 34px;
+}
+
+.btn {
+    height: 68px;
+    background: rgba(233, 233, 233, 1);
+}
+
+.inptbtn {
+    background-color: rgba(233, 233, 233, 1);
+}
+
+#success {
+    display: flex;
+    width: 699px;
+    height: 65px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 34px;
+    background: #929292;
+
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}

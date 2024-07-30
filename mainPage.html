@@ -1,0 +1,68 @@
+<html>
+<head>
+    <title>Запись в салон</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/signUp.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/service.css">
+</head>
+
+<script>
+    function clickBtn() {
+        secondPage.style.display = 'flex';
+        document.body.scrollBy({top: secondPage.getBoundingClientRect().top, behavior:"smooth"});
+    } 
+</script>
+<body>
+    <div id="content">
+        <div class="logo">Логотип</div>
+        <div class="text">
+            Платформа для записи в
+            <br><span class="salon">салон красоты</span> 
+            <span class="manic">Маникюр</span></div>
+        <div class="button" id="enterbtn" onclick="clickBtn()">
+            <div>Перейти к записи</div>
+            <img src="static/allow.svg">
+        </div>
+        
+    </div>
+
+    <div class="signContent" id="secondPage">
+        <div>
+            <p class="hello">Добро пожаловать в ... (название платформы)!</p>
+            <p class="disc"> 
+                Здесь ты сможешь оформить запись в салон красоты рядом с домом.<br>
+                Просто заполни небольшую форму и мы подберем для тебя<br>
+                ближайший салон с нужным временем.
+            </p>
+        </div>
+       
+        <div class="inputs">
+            <div class="input" id="dateTime">Выбрать дату и время</div>
+            <div class="input" id="service">Выбрать услугу</div>
+            <div class="inptbtn">
+                <div class="input">Выбрать район</div>
+                <div class="input btn">Списком</div>
+                <hr size="1px" color="#D4D4D4" width="89%">
+                <div class="input btn">На карте</div>
+            </div>
+        </div>
+        <div id="success">
+            Показать
+        </div>
+        <div id="myModal" style="display: none;"></div>
+        <div id="myModalService" style="display: none;"></div>
+    </div>
+
+    <script src="js/dateInputs.js"></script>
+    <script src="js/serviceInput.js"></script>
+    <script>
+        window.onclick = function (event) {
+            if (event.target == document.getElementById('myModal') || event.target == document.getElementById('myModalService')) {
+                document.getElementById('myModal').style.display = 'none';
+                document.getElementById('myModalService').style.display = 'none';
+            }
+    };
+    </script>
+</body>
+</html>

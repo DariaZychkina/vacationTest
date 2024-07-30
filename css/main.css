@@ -1,0 +1,58 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #000;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.logo {
+    margin: 54px;
+    color: #000;
+    font-size: 24px;
+}
+
+#content {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(201, 193, 246, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+}
+
+.text {
+    color: #2F2C42;
+    font-family: "Century Gothic";
+    font-size: 84px;
+}
+
+.salon {
+    color: #2F2C42;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.manic {
+    color: #000;
+    font-size: 64px;
+    text-decoration: underline solid 15px rgba(73, 51, 198, 1);
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 27px;
+    color: #545454;
+    font-family: "Bodoni Moda";
+    font-size: 20px;
+}
